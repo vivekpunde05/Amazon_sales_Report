@@ -1,27 +1,69 @@
 # Amazon Sales Dashboard
 
-A comprehensive Power BI dashboard for analyzing Amazon e-commerce sales data, providing insights into sales performance, trends, and key business metrics.
+A comprehensive Power BI dashboard for analyzing global e-commerce sales data across multiple markets, providing insights into sales performance, profitability, and key business metrics.
 
 ## Project Overview
 
-This project contains an interactive Power BI dashboard that visualizes Amazon sales data to help stakeholders make data-driven decisions. The dashboard provides a clear view of sales performance across various dimensions including time periods, product categories, regions, and customer segments.
+This project contains an interactive Power BI dashboard that visualizes e-commerce sales data spanning 4 years (2011-2014) with over 51,000 orders across global markets. The dashboard helps stakeholders make data-driven decisions by providing clear insights into sales performance across time periods, product categories, geographic regions, and customer segments.
+
+### Key Metrics at a Glance
+
+- **Total Orders**: 51,290
+- **Total Sales**: $12.64M
+- **Total Profit**: $1.47M
+- **Unique Customers**: 1,590
+- **Unique Products**: 10,292
+- **Date Range**: January 2011 - December 2014
+- **Markets Covered**: APAC, LATAM, EU, US, EMEA
 
 ## Files in This Project
 
-- `amazon sales dashboard.pbix` - Main Power BI dashboard file
-- `ECOMM DATA.xlsx` - Source data file containing Amazon sales records
+- `Amazon Sales Report.pbix` - Main Power BI dashboard file
+- `ECOMM DATA.xlsx` - Source data file containing 51,290 sales records
 - `Amazon Sales Report.png` - Dashboard preview/screenshot
 
 ## Features
 
-The dashboard likely includes:
+The dashboard provides comprehensive analysis across multiple dimensions:
 
-- **Sales Performance Metrics**: Total revenue, order volume, and growth trends
-- **Time-based Analysis**: Sales trends over time (daily, monthly, quarterly, yearly)
-- **Product Analysis**: Top-selling products and category performance
-- **Geographic Insights**: Sales distribution across regions/locations
-- **Customer Analytics**: Customer behavior and purchasing patterns
-- **Interactive Filters**: Dynamic filtering by date, product, region, and other dimensions
+### Sales Performance Metrics
+- Total revenue tracking: $12.64M across 4 years
+- Profit analysis: $1.47M total profit with margin insights
+- Order volume trends: 51,290 orders analyzed
+
+### Time-based Analysis
+- 4-year historical data (2011-2014)
+- Trends by year, quarter, month, and day
+- Seasonal pattern identification
+
+### Product Analysis
+- **3 Main Categories**: Office Supplies (61%), Technology (20%), Furniture (19%)
+- 10,292 unique products tracked
+- Sub-category performance breakdown
+- Top-selling products identification
+
+### Geographic Insights
+- **5 Global Markets**: APAC, LATAM, EU, US, EMEA
+- **Regional Distribution**: Central, South, EMEA, North, Africa, and more
+- Country and city-level analysis
+- Market share and performance comparison
+
+### Customer Analytics
+- **3 Customer Segments**: Consumer (52%), Corporate (30%), Home Office (18%)
+- 1,590 unique customers tracked
+- Customer behavior and purchasing patterns
+- Repeat customer analysis
+
+### Shipping & Operations
+- **4 Ship Modes**: Standard Class, Second Class, First Class, Same Day
+- Shipping cost analysis
+- Delivery performance metrics
+- Order priority tracking (Critical, High, Medium, Low)
+
+### Interactive Filters
+- Dynamic filtering by date range, product category, region, market, and customer segment
+- Cross-filtering across all visualizations
+- Drill-down capabilities for detailed analysis
 
 ## Requirements
 
@@ -36,7 +78,7 @@ To view and interact with this dashboard, you need:
 ### Opening the Dashboard
 
 1. Install Power BI Desktop if you haven't already
-2. Double-click `amazon sales dashboard.pbix` or open it through Power BI Desktop
+2. Open `Amazon Sales Report.pbix` (double-click or open through Power BI Desktop)
 3. The dashboard will load with the data from `ECOMM DATA.xlsx`
 
 ### Refreshing Data
@@ -57,13 +99,47 @@ If you move the files to a different location:
 
 ## Data Source
 
-The dashboard uses data from `ECOMM DATA.xlsx`, which contains Amazon sales transaction records. The dataset typically includes:
+The dashboard uses data from `ECOMM DATA.xlsx`, which contains 51,290 e-commerce transaction records from 2011-2014. The dataset includes 24 columns:
 
-- Order details (Order ID, Date, Status)
-- Product information (Name, Category, SKU)
-- Customer data (Customer ID, Location)
-- Financial metrics (Price, Quantity, Revenue)
-- Shipping and fulfillment information
+### Data Fields
+
+**Order Information**
+- ROW ID, Order ID, Order Date, Ship Date
+- Ship Mode (Standard Class, Second Class, First Class, Same Day)
+- Order Priority (Critical, High, Medium, Low)
+
+**Customer Information**
+- Customer ID, Customer Name
+- Segment (Consumer, Corporate, Home Office)
+
+**Geographic Data**
+- City, State, Country
+- Market (APAC, LATAM, EU, US, EMEA)
+- Region (Central, South, EMEA, North, Africa, etc.)
+- Postal Code
+
+**Product Information**
+- Product ID, Product Name
+- Category (Office Supplies, Technology, Furniture)
+- Sub-Category
+
+**Financial Metrics**
+- Sales (Total: $12.64M)
+- Quantity
+- Discount
+- Shipping Cost
+- Profit (Total: $1.47M)
+
+## Key Insights from the Data
+
+Based on the 51,290 orders analyzed:
+
+- **Office Supplies dominate** with 61% of all orders, followed by Technology (20%) and Furniture (19%)
+- **APAC is the largest market** with 21% of orders, closely followed by LATAM (20%) and EU (19%)
+- **Consumer segment leads** with 52% of orders, while Corporate accounts for 30%
+- **Standard Class shipping** is most popular (60% of orders)
+- **Average profit margin**: 11.6% across all transactions
+- **Geographic spread**: Orders from multiple continents with strong presence in Asia-Pacific, Latin America, Europe, and North America
 
 ## Dashboard Preview
 
@@ -113,11 +189,16 @@ To customize the dashboard:
 
 Potential improvements for this dashboard:
 
-- Add predictive analytics for sales forecasting
-- Integrate additional data sources (inventory, marketing spend)
-- Create mobile-optimized views
-- Implement row-level security for multi-user scenarios
-- Add automated email reports using Power BI Service
+- **Predictive Analytics**: Sales forecasting using historical trends (2011-2014 data)
+- **Profitability Analysis**: Deep dive into profit margins by category and region
+- **Customer Segmentation**: Advanced RFM (Recency, Frequency, Monetary) analysis
+- **Market Comparison**: Benchmark performance across the 5 global markets
+- **Product Performance**: Identify top and bottom performers across 10,292 products
+- **Shipping Optimization**: Analyze shipping costs vs. delivery speed trade-offs
+- **Time Series Analysis**: Seasonal trends and year-over-year growth patterns
+- **Mobile Optimization**: Create mobile-friendly views for on-the-go access
+- **Real-time Updates**: Connect to live data sources for current insights
+- **What-if Analysis**: Scenario planning for pricing and discount strategies
 
 ## Contributing
 
