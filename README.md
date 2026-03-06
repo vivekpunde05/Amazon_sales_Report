@@ -213,8 +213,7 @@ If you'd like to enhance this dashboard:
 
 [Specify your license here]
 
-## Contact
-
+## Contacts
 For questions or support regarding this dashboard, please contact [Your Contact Information]
 
 ---
